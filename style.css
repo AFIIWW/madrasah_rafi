@@ -1,0 +1,392 @@
+
+body {
+    color: #2c3e50;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #2c3e50;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.rafi_container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER & NAVBAR */
+#rafi_header {
+    background-color: #0b5e3b;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#rafi_navbar .rafi_menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#rafi_navbar .rafi_menu li a.rafi_nav_link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#rafi_navbar .rafi_menu li a.rafi_nav_link:hover,
+#rafi_navbar .rafi_menu li a.rafi_nav_link.rafi_active {
+    background-color: #f1c40f;
+    color: #0b5e3b;
+    font-weight: 700;
+}
+
+.rafi_navbar_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#rafi_brand a {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#rafi_brand small {
+    display: block;
+    font-size: 0.85rem;
+    color: #f1c40f;
+    font-weight: 600;
+}
+
+/* HALAMAN UTAMA (HERO) */
+.rafi_hero {
+    background: linear-gradient(135deg, #0b5e3b 0%, #148f5c 100%);
+    color: #ffffff;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.rafi_salam {
+    font-size: 1.1rem;
+    color: #f1c40f;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rafi_hero_content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.rafi_hero_desc {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+    color: #eafaf1;
+}
+
+.rafi_hero_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.rafi_btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.rafi_btn_primary {
+    background-color: #f1c40f;
+    color: #0b5e3b;
+}
+
+
+.rafi_btn_outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: transparent;
+}
+
+.rafi_btn_outline:hover {
+    background-color: #ffffff;
+    color: #0b5e3b;
+}
+
+.rafi_btn_primary:hover {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+
+.rafi_btn:hover {
+    transform: translateY(-2px);
+}
+
+/* PENGATURAN SECTION & GRID */
+.rafi_section {
+    padding: 75px 0;
+    scroll-margin-top: 70px;
+}
+
+.rafi_bg_light {
+    background-color: #f4f9f6;
+}
+
+.rafi_section_title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.rafi_section_title p {
+    color: #5d6d7e;
+}
+
+.rafi_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.rafi_grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.rafi_section_title h2 {
+    font-size: 2rem;
+    color: #0b5e3b;
+    margin-bottom: 8px;
+}
+
+/* CARD & BADGE */
+.rafi_card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #0b5e3b;
+}
+
+.rafi_card h3 {
+    color: #0b5e3b;
+    margin-bottom: 12px;
+}
+
+.rafi_list {
+    padding-left: 20px;
+}
+
+.rafi_list li {
+    margin-bottom: 8px;
+}
+
+.rafi_badge {
+    display: inline-block;
+    background-color: #d4efdf;
+    color: #0b5e3b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* TABEL JADWAL */
+.rafi_table_responsive {
+    overflow-x: auto;
+}
+
+#rafi_tabel_jadwal {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#rafi_tabel_jadwal th,
+#rafi_tabel_jadwal td {
+    padding: 15px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e5e8e8;
+}
+
+#rafi_tabel_jadwal th {
+    background-color: #0b5e3b;
+    color: #ffffff;
+}
+
+#rafi_tabel_jadwal tr:hover {
+    background-color: #eafaf1;
+}
+
+/* PENGAJAR / USTADZ */
+.rafi_text_center {
+    text-align: center;
+}
+
+.rafi_avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #0b5e3b;
+    color: #f1c40f;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.rafi_role {
+    color: #148f5c;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* GALERI FOTO */
+.rafi_galeri_item {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+.rafi_galeri_item h3 {
+    color: #0b5e3b;
+    font-size: 1.1rem;
+    padding: 16px 16px 6px;
+}
+
+.rafi_galeri_item p {
+    padding: 0 16px 18px;
+    font-size: 0.95rem;
+}
+
+.rafi_galeri_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* FORM KONTAK */
+.rafi_form_group {
+    margin-bottom: 16px;
+}
+
+.rafi_form_group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.rafi_form_group input,
+.rafi_form_group select,
+.rafi_form_group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccd1d1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.rafi_form_group input:focus,
+.rafi_form_group select:focus,
+.rafi_form_group textarea:focus {
+    outline: none;
+    border-color: #0b5e3b;
+}
+
+.rafi_feedback {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    display: none;
+    font-weight: 600;
+}
+
+.rafi_feedback_sukses {
+    display: block;
+    background-color: #d4efdf;
+    color: #0b5e3b;
+    border: 1px solid #0b5e3b;
+}
+
+.rafi_btn_full {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+#rafi_footer {
+    background-color: #073b25;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    .rafi_navbar_flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #rafi_navbar .rafi_menu {
+        justify-content: center;
+    }
+
+    .rafi_hero_content h1 {
+        font-size: 1.85rem;
+    }
+
+    .rafi_grid_2,
+    .rafi_grid_3 {
+        grid-template-columns: 1fr;
+    }
+}
